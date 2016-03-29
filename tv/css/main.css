@@ -62,6 +62,14 @@ body {
     padding: 5px 10px;
 }
 
+.channel_head:hover {
+    text-decoration: underline;
+}
+
+.channel_logo {
+    vertical-align: middle;
+}
+
 .list_of_shows ul {
     margin: 0;
     padding: 0;
@@ -71,9 +79,11 @@ body {
 .tv_show {
     padding: 5px 10px;
     font-size: 14px;
+    border-top: 1px solid #fee133;
 }
 
 .tv_show:hover {
     background-color: #eee;
     cursor: pointer!important;
+    text-decoration: underline;
 }
