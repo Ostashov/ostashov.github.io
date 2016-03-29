@@ -50,3 +50,20 @@ body {
 .top_info {
     display: inline;
 }
+
+.channel_block {
+    border: 1px solid #fee133;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+.channel_head {
+    background-color: #fee133;
+    padding: 5px 10px;
+}
+
+.list_of_shows ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
