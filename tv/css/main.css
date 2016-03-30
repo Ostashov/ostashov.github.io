@@ -190,10 +190,27 @@ body {
         padding: 10px 15px;
     }
 
+    .footer .footer_links {
+        display: inline;
+    }
+
     .footer .footer_links a {
         color: #888;
     }
 
     .footer .footer_links a:hover {
         text-decoration: underline;
+    }
+    
+    .footer .left_links {
+        float: left;
+    }
+
+    .footer .fa {
+        padding-right: 2px;
+        font-size: 14px;
+    }
+
+    .footer .right_links {
+        float: right;
     }
