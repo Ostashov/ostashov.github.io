@@ -83,4 +83,10 @@ $(document).ready(function() {
 		return false;
 	});
 
+
+	// Выбор дня
+	$(".day_select").click(function() {
+		$(".days li.selected").removeClass("selected");
+		$(this).addClass("selected");
+	});
 });
