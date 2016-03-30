@@ -50,26 +50,30 @@ body {
     margin-top: -2px;
 }
 
-.days ul {
+.days_mobile {
+    padding: 10px;
+}
+
+.days_desktop ul {
     padding-left: 0px;
 }
 
-.days ul li {
+.days_desktop ul li {
     display: inline;
     padding: 15px 10px;
 }
 
-.days ul li.selected {
+.days_desktop ul li.selected {
     color: red;
     border-bottom: 2px solid red;
 }
 
-.days ul li:hover {
+.days_desktop ul li:hover {
     border-bottom: 2px solid;
     background-color: #eee;
 }
 
-.days ul li.selected:hover {
+.days_desktop ul li.selected:hover {
     background-color: #fff;
 }
 
