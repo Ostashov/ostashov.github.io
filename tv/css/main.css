@@ -45,6 +45,30 @@ body {
     display: inline;
 }
 
+.date_menu {
+    border-bottom: 1px solid #eee;
+    margin-top: -2px;
+}
+
+.days ul {
+    padding-left: 0px;
+}
+
+.days ul li {
+    display: inline;
+    padding: 15px 10px;
+}
+
+.days ul li.selected {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.days ul li:hover {
+    border-bottom: 2px solid;
+    background-color: #eee;
+}
+
 .channel_block {
     border: 1px solid #ddd;
     border-radius: 3px;
@@ -74,6 +98,5 @@ body {
 
 .tv_show:hover {
     background-color: #eee;
-    cursor: pointer!important;
     text-decoration: underline;
 }
