@@ -1,3 +1,7 @@
+html {
+    height:100%;
+}
+
 *::-webkit-input-placeholder {
     color: #666;
     opacity: 1;
@@ -26,7 +30,12 @@ body textarea:required:valid {
 body {
     font-family: "RobotoRegular", sans-serif;
     font-size: 16px;
+    height:100%;
+    min-height:100%;
+    position:relative;
 }
+
+/*==========  Header  ==========*/
 
 .top_header {
     z-index: 100!important;
@@ -48,6 +57,8 @@ body {
 .top_info {
     display: inline;
 }
+
+/*==========  Days menu  ==========*/
 
 .date_menu {
     border-bottom: 1px solid #eee;
@@ -90,6 +101,8 @@ body {
             .days_desktop ul li.selected:hover {
                 background-color: #fff;
             }
+
+/*==========  Content  ==========*/
 
 .channel_block {
     border: 1px solid #ddd;
@@ -136,3 +149,30 @@ body {
 .show_title {
     display: inline;
 }
+
+/*==========  Footer  ==========*/
+
+.clear {
+    clear: both;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.footer_topline {
+    padding: 10px 0px;
+    font-family: "RobotoRegular";
+    font-size: 12px;
+}
+
+    .footer_topline a {
+        color: #888;
+    }
+
+    .footer_topline a:hover {
+        text-decoration: underline;
+    }
