@@ -28,6 +28,10 @@ body {
     font-size: 16px;
 }
 
+.top_header {
+    z-index: 100!important;
+}
+
 .header_topline {
     padding: 10px 0px;
     background-color: #fee133;
@@ -47,35 +51,45 @@ body {
 
 .date_menu {
     border-bottom: 1px solid #eee;
-    margin-top: -2px;
+}
+
+.days {
+    z-index: 1;
 }
 
 .days_mobile {
     padding: 15px 10px;
 }
 
-.days_desktop ul {
-    padding-left: 0px;
+.days_desktop {
+    margin-top: -1px;
 }
 
-.days_desktop ul li {
-    display: inline;
-    padding: 15px 10px;
-}
+    .days_desktop ul {
+        padding-left: 0px;
+    }
 
-.days_desktop ul li.selected {
-    color: red;
-    border-bottom: 2px solid red;
-}
+        .days_desktop ul li {
+            display: inline;
+            padding: 15px 10px 16px 10px;
+            -webkit-transition: background-color .2s;
+            -o-transition: background-color .2s;
+            transition: background-color .2s;
+        }
 
-.days_desktop ul li:hover {
-    border-bottom: 2px solid;
-    background-color: #eee;
-}
+            .days_desktop ul li.selected {
+                color: red;
+                border-bottom: 2px solid red;
+            }
 
-.days_desktop ul li.selected:hover {
-    background-color: #fff;
-}
+            .days_desktop ul li:hover {
+                border-bottom: 2px solid;
+                background-color: #eee;
+            }
+
+            .days_desktop ul li.selected:hover {
+                background-color: #fff;
+            }
 
 .channel_block {
     border: 1px solid #ddd;
@@ -89,9 +103,10 @@ body {
     font-family: "RobotoMedium";
 }
 
-.channel_head:hover {
-    text-decoration: underline;
-}
+    .channel_head:hover .channel_title {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 
 .list_of_shows ul {
     margin: 0;
@@ -104,7 +119,20 @@ body {
     font-size: 14px;
 }
 
-.tv_show:hover {
-    background-color: #eee;
-    text-decoration: underline;
+    .tv_show:hover {
+        background-color: #eee;
+    }
+
+    .tv_show:hover .show_time,
+    .tv_show:hover .show_title {
+        cursor: pointer;
+    }
+
+.show_time {
+    display: inline;
+    font-family: "RobotoBold";
+}
+
+.show_title {
+    display: inline;
 }
