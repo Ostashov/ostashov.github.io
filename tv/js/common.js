@@ -89,4 +89,18 @@ $(document).ready(function() {
 		$(".days li.selected").removeClass("selected");
 		$(this).addClass("selected");
 	});
+
+	//Popup
+
+	$(window).mousemove(function (pos) { 
+    	$(".pop_up").css('left',(pos.pageX+25)+'px').css('top',(pos.pageY-5)+'px'); 
+    });
+
+    $('.tv_show').hover(
+    	function() {
+    		setTimeout(function() {$(".pop_up").css('display','block')}, 1000);
+    	},
+    	function() {
+    		setTimeout(function() {$(".pop_up").css('display','none')}, 1000);
+    	});
 });

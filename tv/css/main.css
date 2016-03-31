@@ -79,6 +79,25 @@ body {
     display: inline;
 }
 
+.pop_up {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 300px;
+    border: 3px solid #fee133;
+    display: none;
+    box-shadow: 0px 0 10px 0px rgba(0,0,0,0.2);
+}
+
+.pop_up_content .show_image img {
+    width: 294px;
+}
+
+.pop_up_content .show_description {
+    padding: 10px;
+}
+
 /*==========  Days menu  ==========*/
 
 .date_menu {
@@ -153,7 +172,7 @@ body {
     max-height: 20px;
     float: left;
     padding-right: 5px;
-    padding-top: 4px;
+    padding-top: 2px;
 }
 
 .list_of_shows ul {
