@@ -125,8 +125,8 @@ body {
 
 /*==========  Content  ==========*/
 
-.main_content {
-    margin-bottom: 20px;
+.main_content .container {
+    margin-bottom: 40px;
 }
 .channel_block {
     border: 1px solid #ddd;
@@ -144,6 +144,13 @@ body {
         text-decoration: underline;
         cursor: pointer;
     }
+
+.channel_logo img {
+    max-height: 20px;
+    float: left;
+    padding-right: 5px;
+    padding-top: 4px;
+}
 
 .list_of_shows ul {
     margin: 0;
