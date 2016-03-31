@@ -145,6 +145,10 @@ body {
         cursor: pointer;
     }
 
+    .channel_head:hover .channel_logo {
+        cursor: pointer;
+    }
+
 .channel_logo img {
     max-height: 20px;
     float: left;
@@ -173,12 +177,13 @@ body {
     }
 
 .show_time {
-    display: inline;
+    display: table-cell;
     font-family: "RobotoBold";
+    padding-right: 5px;
 }
 
 .show_title {
-    display: inline;
+    display: table-cell;
 }
 
 /*==========  Footer  ==========*/
@@ -191,6 +196,7 @@ body {
     font-family: "RobotoRegular";
     font-size: 12px;
     border-top: 1px solid #eee;
+    color: #888;
 }
     
     .footer .container {
@@ -208,14 +214,14 @@ body {
     .footer .footer_links a:hover {
         text-decoration: underline;
     }
-    
-    .footer .left_links {
-        float: left;
-    }
 
     .footer .fa {
         padding-right: 2px;
         font-size: 14px;
+    }
+    
+    .footer .left_links {
+        float: left;
     }
 
     .footer .right_links {
