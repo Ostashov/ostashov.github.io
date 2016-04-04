@@ -94,8 +94,14 @@ body {
     width: 294px;
 }
 
-.pop_up_content .show_description {
+.pop_up_content .show_popup_title {
+    padding: 10px 10px 0px 10px;
+    font-family: "RobotoMedium";
+}
+
+.pop_up_content .show_popup_description {
     padding: 10px;
+    font-size: 14px;
 }
 
 /*==========  Days menu  ==========*/
