@@ -43,13 +43,13 @@ body {
     border-collapse: collapse;
 }
 
+.logo,
 .content {
 	display: table-row;
 }
 
 .brand_logo {
 	display: table-cell;
-    /* margin: 0 auto; */
     text-align: center;
     vertical-align: middle;
 }
@@ -57,3 +57,26 @@ body {
 .brand_logo img {
 	max-width: 200px;
 }
+
+.menu {
+	display: table-cell;
+	text-align: center;
+	vertical-align: top;
+}
+
+	.menu .links {
+		padding-left: 0px;
+	}
+
+	.menu .links li {
+		display: inline;
+		padding: 5px;
+	}
+
+.menu a {
+	color: #888;
+}
+
+	.menu a:hover {
+		color: #DA2327;
+	}
