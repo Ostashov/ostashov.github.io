@@ -148,6 +148,39 @@ body {
                 background-color: #fff;
             }
 
+.types_desktop {
+    padding-top: 5px;
+}
+
+    .types_desktop .types_title {
+        float: left;
+    }
+
+    .types_desktop ul {
+        padding-left: 0px;
+        margin: 15px 0px 0px 0px;
+    }
+
+    .types_desktop ul li {
+        display: inline;
+        border: 1px solid #eee;
+        border-radius: 3px;
+        padding: 5px 10px;
+    }
+
+        .types_desktop ul li.selected {
+            border: 1px solid #FEE133;
+        }
+
+        .types_desktop ul li:hover {
+            cursor: pointer!important;
+            border: 1px solid #ddd;
+            text-decoration: underline;
+        }
+
+        .types_desktop ul li.selected:hover {
+            border: 1px solid #FEE133;
+        }
 /*==========  Content  ==========*/
 
 .main_content .container {
@@ -192,7 +225,12 @@ body {
     font-size: 14px;
 }
 
+    .tv_show.genre_no {
+        color: #ddd;
+    }
+
     .tv_show:hover {
+        color: black;
         background-color: #eee;
     }
 

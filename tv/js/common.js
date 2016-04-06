@@ -90,6 +90,39 @@ $(document).ready(function() {
         $(this).addClass("selected");
     });
 
+    //Фильтр по передачам
+    $(".types_desktop li").click(function() {
+        if ($(this).hasClass("selected")) {
+            $(this).removeClass("selected");
+        } else {
+            $(this).addClass("selected");
+        }
+        showTVshows();
+    });
+
+    function showTVshows() {
+        var films_flag = $("#films_flag").hasClass("selected");
+        var series_flag = $("#series_flag").hasClass("selected");
+        var sport_flag = $("#sport_flag").hasClass("selected");
+
+        if (!films_flag & !series_flag & !sport_flag) {
+            $(".tv_show").removeClass("genre_no");
+        } else {
+            $(".tv_show").addClass("genre_no");
+
+            if (series_flag) {
+                $(".tv_show.series").removeClass("genre_no");
+            }
+
+            if (films_flag) {
+                $(".tv_show.film").removeClass("genre_no");
+            }
+
+            if (sport_flag) {
+                $(".tv_show.sport").removeClass("genre_no");
+            }
+        }
+    }
     //Popup
 
     function getPosition(e) {
