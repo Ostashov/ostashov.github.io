@@ -19,10 +19,12 @@ body input:focus:required:invalid,
 body textarea:focus:required:invalid {
 	
 }
+
 body input:required:valid,
 body textarea:required:valid {
 	
 }
+
 body {
 	font-family: "RobotoRegular", sans-serif;
 	font-size: 16px;
@@ -57,6 +59,29 @@ body {
 .brand_logo img {
 	max-width: 200px;
 }
+
+.projects {
+	display: table-cell;
+	text-align: center;
+}
+
+	ul.projectsList {
+		list-style-type: none;
+		padding: 0px;
+	}
+
+	ul.projectsList li {
+		line-height: 1.5em;
+	}
+
+	ul.projectsList a {
+		color: #888;
+		text-decoration: none;
+	}
+
+		ul.projectsList a:hover {
+			color: #DA2327;
+		}
 
 .menu {
 	display: table-cell;
