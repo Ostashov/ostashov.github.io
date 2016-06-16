@@ -51,10 +51,24 @@ body {
 }
 
 .brand_logo {
-	display: table-cell;
-    text-align: center;
+	text-align: center;
     vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.svg-logo {
+	text-align: center;
+    vertical-align: middle;
+    width: 15%;
+    min-width: 200px;
+    margin-top: 50px;
+}
+
+	.svg-logo .last-slash {
+		right: 10px;
+	}
 
 .brand_logo img {
 	max-width: 200px;
