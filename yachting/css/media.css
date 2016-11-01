@@ -1,0 +1,105 @@
+﻿@media screen and (max-width: 1170px) {
+
+    .horizontal-menu-list {
+        display: none;
+    }
+    
+    .menu-bar {
+        display: inline-block;
+    }
+
+    .menu-bar .contacts-list {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1800px) {
+    ul.menu-section li.menu-link {
+        padding-left: 10%;
+    }
+}
+
+@media all and (max-width: 1050px) {
+    ul.menu-section li.menu-link {
+        padding-left: 5px;
+    }
+
+    ul.menu-section li.menu-link.active,
+    ul.menu-section li.menu-link:hover {
+        background: none;
+    }
+
+    ul.menu-section li.menu-link.active a,
+    ul.menu-section li.menu-link:hover a {
+        color: #003851;
+        border-bottom: 1px solid;
+    }
+
+    ul.menu-section li.menu-link.main-link.active a,
+    ul.menu-section li.menu-link.main-link:hover a {
+        color: #000;
+    }
+}
+
+@media all and (max-width: 790px) {
+    header {
+        width: 100%;
+        background: none;
+    }
+
+    .weather-widget,
+    .menu-type-organizations {
+        display: none;
+    }
+
+    .main-logo img {
+        width: 100px;
+    }
+
+    .menu-bar {
+        margin: 0px;
+    }
+
+    .menu-bar .submenu-block-wrap {
+        background-color: #003851;
+    }
+
+        .menu-bar .submenu-block-wrap a {
+            color: #fff;
+        }
+
+    .contacts-block {
+        margin-right: 5px;
+    }
+
+    .contacts-block > div {
+        padding: 0px 3px;
+    }
+}
+
+@media all and (max-width: 418px) {
+    .horizontal-menu-list .contacts-block {
+        display: none;
+    }
+
+    .menu-bar .submenu-col {
+        margin: 0px;
+    }
+    .menu-bar .contacts-list {
+        display: block;
+        color: #fff;
+        border-top: 1px solid;
+    }
+
+        .menu-bar .contacts-list .tel {
+            display: none;
+        }
+        
+    .menu-bar .contacts-list li {
+        padding: 0px 5px;
+    }
+
+    .contacts-block .feedback-btn {
+        display: none;
+    }
+}

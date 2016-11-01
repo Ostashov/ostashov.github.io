@@ -1,0 +1,273 @@
+﻿* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Myriad Pro", "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 400;
+}
+
+.clear:after {
+        content: "&nbsp;";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        height: 0;
+        line-height: 0;
+}
+/* HEADER */
+header {
+    color: #fff;
+}
+
+.switch-lang {
+    height: 50px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+    .switch-lang-block {
+        position: absolute;
+        top: 0px;
+        right: 4%;
+    }
+        
+        .lang-btn,
+        a.lang-btn {
+            display: block;
+            background-color: #8d8d8d;
+            color: #fff;
+            padding: 0px 10px;
+            float: left;
+            margin-right: 4px;
+            text-decoration: none;
+            transition: padding 0.2s ease, background 0.2s ease;
+        }
+
+        .lang-btn:hover {
+            background: #055b98;
+            padding: 5px 10px;
+            transition: padding 0.2s ease, background 0.2s ease;
+        }
+
+            .lang-selected {
+                padding: 5px 10px;
+                background-color: #055b98;
+            }
+    
+.main-logo img {
+    width: 165px;
+    float: left;
+    margin: 15px;
+}
+
+.horizontal-menu {
+    height: 55px;
+    background: #003851;
+    line-height: 55px;
+}
+
+.welcome-block {
+    float: left;
+}
+
+    .menu-type-organizations {
+        width: 165px;
+        clear: both;
+        text-align: center;
+        line-height: 30px;
+        margin: 15px;
+        color: #003851;
+        border: 1px solid #4c6fb1;
+        background-color: #fff;
+    }
+
+    .menu-item {
+        display: inline-block;
+    }
+
+    .menu-dropdown {
+        z-index: 10;
+        display: none;
+        position: absolute;
+        width: 165px;
+        background-color: #fff;
+        margin-left: -1px;
+        border-left: 1px;
+        border-right: 1px;
+        border-bottom: 1px;
+        border-top: 0px;
+        border-style: solid;
+        border-color: #4c6fb1;
+    }
+
+    .menu-type-organizations:hover .menu-dropdown {
+        display: block;
+    }
+
+        .menu-type-organizations a.menu-link {
+            display: block;
+            color: #003851;
+        }
+
+
+    .weather-widget {
+        width: 300px;
+        background-color: #003851;
+        color: #fff;
+        font-weight: 200;
+        margin: 15px;
+        padding: 5px 0px;
+        z-index: 1;
+        display: inline-table;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+        .weather-city,
+        .weather-icon,
+        .weather-degree {
+            display: table-cell;
+        }
+
+        .weather-city {
+            width: 105px;
+        }
+
+        .weather-icon img {
+            width: 25px;
+        }
+
+    .menu-bar {
+        display: none;
+        float: left;
+        margin-left: -130px;
+    }
+    
+    .horizontal-menu-list {
+        float: left;
+        margin-left: -130px;
+    }
+
+    .horizontal-menu-list .menu-block-btn {
+        display: inline-block;
+        
+    }
+
+        .menu-bar .menu-block-btn {
+            padding: 0px 15px;
+        }
+        .menu-block-btn a {
+            display: inline-block;
+            color: #fff;
+            padding: 0px 15px;
+        }
+            
+            .btn-hover:hover,
+            .btn-hover:hover a.menu-block-title {
+                background: #fff;
+                color: #003851;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+        .submenu-block-wrap {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            color: #003851;
+            padding: 0px 30px 10px 55px;
+        }
+
+        .menu-bar .submenu-block-wrap {
+            padding: 0px 10px;
+            margin-left: -15px;
+        }
+        
+        .menu-bar .menu-block-btn.active .submenu-block-wrap,
+        .menu-block-btn:hover .submenu-block-wrap {
+            display: block;
+        }
+
+            .submenu-col {
+                display: inline-block;
+                margin-right: 25px;
+                vertical-align: top;
+            }
+
+                .submenu-col-title {
+                    font-weight: 500;
+                    border-bottom: 1px solid;
+                    line-height: 30px;
+                    margin-top: 15px;
+                    padding-right: 15px;
+                }
+                
+                .submenu-col-content ul {
+                    margin: 10px 0px;
+                }
+                    .submenu-col-content li {
+                        list-style-type: none;
+                        line-height: 25px;
+                    }
+
+                        .submenu-col-content li::before {
+                            content: ">";
+                            font-weight: 200;
+                        }
+
+                        .menu-bar .submenu-col-content li::before {
+                            content: none;
+                        }
+
+                    .submenu-col-content a {
+                        color: #003851;
+                        padding: 0px 5px;
+                    }
+
+.contacts-block {
+    display: flex;
+    float: right;
+    margin-right: 15px;
+}
+    
+    .contacts-block * {
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .tel-block {
+        display: inline-block;
+        font-size: 16px;
+        padding: 0px 15px;
+    }
+
+    .feedback-btn {
+        display: inline-block;
+        padding: 0px 15px;
+        height: 55px;
+        line-height: 40px;
+    }
+
+        .feedback-title {
+            margin-top: -25px;
+            position: relative;
+            font-size: 10px;
+        }
+
+/* FOOTER */
+footer {
+    clear: both;
+    display: block;
+    background-color: #003851;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+

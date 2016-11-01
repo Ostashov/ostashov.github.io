@@ -1,0 +1,123 @@
+﻿header {
+    background: url("../images/header-background.jpg") no-repeat top center; 
+    padding-bottom: 130px;
+}
+
+.content {
+    margin-top: 62px;
+    position: relative;
+    height: auto;
+}
+
+.content > div {
+}
+
+.left-block {
+    margin: 0px;
+}
+
+.left-block {
+    width: 10%;
+    height: auto;
+    float: left;
+}
+
+.central-block {
+    width: 70%;
+    float: left;
+    padding: 0px 70px;
+    height: auto;
+}
+
+.right-block {
+    width: 20%;
+    float: right;
+    height: auto;
+}
+
+.vertical-menu {
+    width: 100%;
+}
+    ul.menu-section {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+    }
+
+        ul.menu-section li.menu-link {
+            width: auto;
+            padding-left: 45%;
+        }
+
+        ul.menu-section li.menu-link.active,
+        ul.menu-section li.menu-link:hover {
+            background: #003851;
+        }
+
+            ul.menu-section li.menu-link a {
+                color: #003851;
+                line-height: 25px;
+                margin-left: 10px;
+                text-decoration: none;
+            }
+
+                ul.menu-section li.menu-link.main-link a {
+                    color: #000;
+                    font-size: 16px;
+                    margin-left: 0px;
+                }
+
+            ul.menu-section li.menu-link.active a,
+            ul.menu-section li.menu-link:hover a {
+                color: #fff;
+            } 
+
+            ul.menu-section li.menu-link a::before {
+                content: ">";
+                margin-right: 2px;
+            }
+
+            ul.menu-section li.menu-link.main-link a::before {
+                content: none;
+            }
+
+    .page-title {
+        margin-top: 0px;
+        text-transform: uppercase;
+    }
+
+    .block-title {
+        width: 100%;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+        border-bottom: 2px solid;
+        margin-bottom: 50px;
+        padding-bottom: 5px;
+    }
+
+    .news-preview {
+        width: 70%;
+        float: left;
+        margin-bottom: 40px;
+    }
+
+        .news-preview .news-image {
+            margin-bottom: 10px;
+        }
+            .news-preview .news-image img {
+                width: 100%;
+            }
+
+        .news-preview .news-title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+            .news-preview a {
+                color: #000;
+            }
+
+        .news-preview .news-info {
+            font-size: 13px;
+        }

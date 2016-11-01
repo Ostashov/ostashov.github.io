@@ -1,0 +1,166 @@
+body {
+    background: url("../images/home-background.jpg") no-repeat center center fixed; 
+    -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover; 
+}
+
+/* CONTENT */
+
+.content {
+    clear: both;
+}
+
+    /*.left-block {
+        width: 300px;
+        float: left;
+        margin-left: 15px;
+        margin-top: 25px;
+    }*/
+
+        .fast-order-block {
+            width: inherit;
+            font-weight: 200;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+            .fast-order-block__item {
+                display: inline-flex;
+            }
+
+            .fast-order-block .block-btn {
+                display: inline-block;
+                margin: 0px 0px;
+            }
+
+            .fast-order-block .block-title {
+                width: 150px;
+                background-color: #e5ebed;
+                padding: 5px 10px 10px 10px;
+                text-align: center;
+                text-transform: uppercase;
+                margin-top: 5px;
+                border-top: 1px solid #979899;
+                transition: color 0.2s ease, background 0.2s ease;
+            }
+
+                .fast-order-block .is-active .block-title {
+                    margin-top: 0px;
+                    padding: 10px 10px;
+                }
+
+            .fast-order-block .buy-block .block-title {
+                float: left;
+                border-left: 1px solid #979899;
+            }
+            
+            .fast-order-block .rent-block .block-title {
+                float: right;
+                border-right: 1px solid #979899;
+            }
+
+            .rent-block .block-content {
+                margin-left: -150px;
+            }
+            
+            .fast-order-block .block-title:hover {
+                cursor: pointer;
+            }
+
+            .fast-order-block .is-active .block-title {
+                cursor: auto;
+            }
+
+            .fast-order-block .block-title:hover,
+            .fast-order-block .is-active .block-title {
+                background-color: #003851;
+                color: #fff;
+                border-color: #003851;
+                transition: color 0.2s ease, background 0.2s ease;
+            }
+
+            .fast-order-block .block-content {
+                display: none;
+                background-color: #003851;
+                color: #fff;
+                margin-top: 37px;
+                width: 300px;
+                position: absolute;
+                padding: 20px 15px;
+                text-transform: uppercase;
+            }
+            
+            .fast-order-block .is-active .block-content {
+                display: block;
+            }
+
+
+/* FORM */
+.select {
+    display: inline-block;
+}
+
+.buy-block .drop li {
+    white-space: nowrap;
+    padding: 5px 10px;
+}
+
+.buy-block .slct,
+.buy-block .drop,
+.buy-block .radio {
+    text-transform: none;
+}
+
+    .buy-block .select-producer .slct {
+        width: 140px;
+    }
+
+    .buy-block .select-producer .drop {
+        margin: 5px 0px 0px 128px;
+    }
+
+    .buy-block .select-money .slct {
+        margin-left: 87px;
+    }
+
+    .buy-block .select-money .drop {
+        margin: 5px 0px 0px 147px;
+    }
+
+    .buy-block .radioblock {
+        float: right;
+    }
+
+        .buy-block .radio-status,
+        .buy-block .radio-type {
+            margin-right: 3px;
+        }
+        
+        .slider-length label {
+            font-weight: inherit;
+        }
+        .slider-length #amount-length {
+            background: none;
+            border: none;
+            color: #fff;
+        }
+
+.ui-widget.ui-widget-content,
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-corner-all {
+    border: none;
+    border-radius: 0px;
+}
+
+.ui-slider-horizontal {
+    height: 0.15em;
+}
+        
+

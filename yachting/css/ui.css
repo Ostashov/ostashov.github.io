@@ -1,0 +1,79 @@
+﻿/* FORM */
+.radio,
+.drop li,
+.check {
+    background: url("../images/sprites-1.png") 0 0 no-repeat;
+}
+
+.slct:after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 13px;
+    background: url(../images/sprites-1.png) 0 0 no-repeat;
+    background-position: 0px -55px;
+    margin-top: 2px;
+    right: 25px;
+}
+
+.select .slct {
+    margin-top: -3px;
+}
+.radioblock {
+    margin-top: -10px;
+}
+
+.radio {
+    display: block;
+    background-position: 3px 3px;
+    cursor: pointer;
+    text-indent: 22px;
+    font-size: 13px;
+}
+
+.radioblock-inline .radio {
+    display: inline-block;
+}
+
+.radio.active {
+    background-position: 3px -24px;
+}
+
+
+/*  =   Select */
+.slct {
+    display: block;
+    float: right;
+    background-color: #e5ebed;
+    width: 120px;
+    margin-left: 5px;
+    padding: 4px 15px 4px 10px;
+    color: #444;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis; 
+
+}
+
+.drop {
+    margin: 0;
+    padding: 0;
+    border-top: none;
+    display: none;
+    position: absolute;
+    background: #fff;
+    z-index: 1000;
+}
+.drop li {
+    list-style: none;
+    cursor: pointer;
+    display: block;
+    color: #444;
+    padding: 4px 15px 4px 25px;
+    background-position: 10px -119px;
+}
+.drop li:hover {
+    background-color: #e8e8e8;
+    color: #222;
+}
