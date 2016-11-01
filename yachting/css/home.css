@@ -162,5 +162,11 @@ body {
 .ui-slider-horizontal {
     height: 0.15em;
 }
-        
+
+
+
+
+.fast-order-block {
+    display: none;
+}
 
