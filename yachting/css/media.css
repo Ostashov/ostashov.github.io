@@ -45,35 +45,44 @@
     header {
         width: 100%;
         background: none;
+        padding: 0px;
     }
 
-    .weather-widget,
-    .menu-type-organizations {
-        display: none;
-    }
-
-    .main-logo img {
-        width: 100px;
-    }
-
-    .menu-bar {
-        margin: 0px;
-    }
-
-    .menu-bar .submenu-block-wrap {
-        background-color: #003851;
-    }
-
-        .menu-bar .submenu-block-wrap a {
-            color: #fff;
+        .switch-lang {
+            background-color: #4c4c4c;
+        }
+        
+        .weather-widget,
+        .menu-type-organizations {
+            display: none;
         }
 
-    .contacts-block {
-        margin-right: 5px;
-    }
+        .main-logo img {
+            width: 100px;
+        }
 
-    .contacts-block > div {
-        padding: 0px 3px;
+        .menu-bar {
+            margin: 0px;
+        }
+
+        .menu-bar .submenu-block-wrap {
+            background-color: #003851;
+        }
+
+            .menu-bar .submenu-block-wrap a {
+                color: #fff;
+            }
+
+        .contacts-block {
+            margin-right: 5px;
+        }
+
+        .contacts-block > div {
+            padding: 0px 3px;
+        }
+
+    .content {
+        margin-top: 10px;
     }
 }
 
@@ -102,4 +111,20 @@
     .contacts-block .feedback-btn {
         display: none;
     }
+}
+
+@media all and (max-width: 335px) {
+
+        .switch-lang {
+            height: 40px;
+        }
+
+        .main-logo img {
+            width: 70px;
+        }
+        .contacts-block {
+            display: none;
+        }
+
+    
 }
