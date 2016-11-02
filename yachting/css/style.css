@@ -162,10 +162,10 @@ header {
         .menu-bar .menu-block-btn {
             padding: 0px 15px;
         }
-        .menu-block-btn a {
+        .menu-block-btn a,
+        .menu-bar .menu-inner-page {
             display: inline-block;
             color: #fff;
-            padding: 0px 15px;
         }
             
             .btn-hover:hover,
@@ -185,7 +185,7 @@ header {
         }
 
         .menu-bar .submenu-block-wrap {
-            padding: 0px 10px;
+            padding: 10px;
             margin-left: -15px;
         }
         
@@ -208,9 +208,7 @@ header {
                     padding-right: 15px;
                 }
                 
-                .submenu-col-content ul {
-                    margin: 10px 0px;
-                }
+            
                     .submenu-col-content li {
                         list-style-type: none;
                         line-height: 25px;
@@ -223,6 +221,11 @@ header {
 
                         .menu-bar .submenu-col-content li::before {
                             content: none;
+                        }
+
+                        .menu-bar .menu-inner-page {
+                            border-bottom: 1px solid #003851;
+                            display: none;
                         }
 
                     .submenu-col-content a {

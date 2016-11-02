@@ -53,10 +53,12 @@
 
         .switch-lang {
             background-color: #4c4c4c;
+            height: 40px;
         }
         
         .weather-widget,
-        .menu-type-organizations {
+        .menu-type-organizations,
+        .left-block {
             display: none;
         }
 
@@ -76,6 +78,11 @@
                 color: #fff;
             }
 
+            .menu-bar .menu-inner-page {
+                border-bottom: 1px solid #fff;
+                display: block;
+            }
+
         .contacts-block {
             margin-right: 5px;
         }
@@ -87,6 +94,15 @@
     .content {
         margin-top: 220px;
     }
+
+        .central-block {
+            width: 80%;
+            padding: 0px 70px 0px 15px;
+        }
+
+        .news-preview {
+            width: 90%;
+        }
 }
 
 @media all and (max-width: 418px) {
@@ -127,11 +143,6 @@
 }
 
 @media all and (max-width: 335px) {
-
-        .switch-lang {
-            height: 40px;
-        }
-
         .main-logo img {
             width: 70px;
         }
