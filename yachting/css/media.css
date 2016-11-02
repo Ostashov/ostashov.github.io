@@ -135,22 +135,22 @@
         margin-top: 110px
     }
 
-        .central-block {
+        .content .central-block {
             width: 100%;
         }
 
-        .right-block {
+        .content .right-block {
             width: 100%;
             padding: 0px 15px;
             margin-top: 40px;
         }
 
-            .right-block .block-title {
+            .content .right-block .block-title {
                 margin-bottom: 20px;
             }
-            .news-preview {
-                width: 100%;
-            }
+                .news-preview {
+                    width: 100%;
+                }
 
 }
 
