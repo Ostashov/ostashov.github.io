@@ -172,6 +172,7 @@ header {
             padding: 0px 15px;
         }
             
+            .menu-bar .menu-block-btn.active,
             .btn-hover:hover,
             .btn-hover:hover a.menu-block-title {
                 background: #fff;

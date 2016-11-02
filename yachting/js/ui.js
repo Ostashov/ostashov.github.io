@@ -1,3 +1,26 @@
+// MENU
+$(".menu-bar .menu-block-btn").click(function() {
+    var classList = $(this).attr('class');
+    if (classList.indexOf('active') == -1) {
+       $(this).addClass("active");
+    } else {
+        $(this).removeClass("active");
+    }
+});
+
+$(document).click( function(event){
+    if( $(event.target).closest(".menu-bar .menu-block-btn.active").length ) return;
+    $(".menu-bar .menu-block-btn.active").removeClass("active");
+    event.stopPropagation();
+});
+
+
+
+
+
+
+
+
 // RadioButton
 $('.radioblock').find('.radio').each(function(){
     $(this).click(function(){
