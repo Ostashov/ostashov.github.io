@@ -167,6 +167,10 @@ header {
             display: inline-block;
             color: #fff;
         }
+
+        .menu-block-btn a {
+            padding: 0px 15px;
+        }
             
             .btn-hover:hover,
             .btn-hover:hover a.menu-block-title {
