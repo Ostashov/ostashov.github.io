@@ -112,6 +112,7 @@
 
     .contacts-block {
         display: block;
+        margin-right: 0px;
     }
 
     .menu-bar .submenu-col {
