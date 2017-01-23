@@ -36,6 +36,10 @@ body {
     width: 100%;
     margin: 0 auto;
 }
+
+a {
+	text-decoration: none;
+}
  
 .wrapper {
     height: 100%;
@@ -74,28 +78,22 @@ body {
 	max-width: 200px;
 }
 
-.projects {
+.welcome {
 	display: table-cell;
 	text-align: center;
 }
 
-	ul.projectsList {
-		list-style-type: none;
-		padding: 0px;
+	.welcome a:link,
+	.welcome a:active,
+	.welcome a:visited {
+	  color: #000000; 
+	  border-bottom: 1px dashed; 
 	}
 
-	ul.projectsList li {
-		line-height: 1.5em;
+	.welcome a:hover {
+	  color: #DA2327; 
+	  border-bottom: .07em solid;
 	}
-
-	ul.projectsList a {
-		color: #888;
-		text-decoration: none;
-	}
-
-		ul.projectsList a:hover {
-			color: #DA2327;
-		}
 
 .menu {
 	text-align: center;
@@ -104,7 +102,6 @@ body {
 
 	.menu a {
 		color: #ffffff;
-		text-decoration: none;
 	}
 
 .links {
