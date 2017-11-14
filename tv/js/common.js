@@ -83,7 +83,7 @@ $(document).ready(function() {
         var margin = 25;
         var posx = getPosition(pos).x;
         var posy = getPosition(pos).y;
-        var scrollTop = document.body.scrollTop;
+        var scrollTop = window.pageYOffset;
         
         if (posx + margin + margin + elem_width > window_width) {
             $(".pop_up").css('left',posx - margin - elem_width + 'px');
