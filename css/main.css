@@ -50,6 +50,7 @@ a {
 .logo,
 .content {
   display: table-row;
+  height: 50%;
 }
 
 .brand_logo {
@@ -58,6 +59,11 @@ a {
   text-align: center;
   text-align: -webkit-center;
   text-align: -moz-center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -40px);
+  transform: translate(-50%, -40px);
 }
 
 .svg-logo {
@@ -65,7 +71,7 @@ a {
   vertical-align: middle;
   width: 15%;
   min-width: 200px;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
 }
 
 .svg-logo .last-slash {
@@ -77,7 +83,8 @@ a {
 }
 
 .welcome {
-  display: table-cell;
+  /*display: table-cell;*/
+  display: none;
   text-align: center;
 }
 
@@ -94,8 +101,16 @@ a {
 }
 
 .menu {
+  width: 100%;
+  min-height: 55px;
   text-align: center;
   vertical-align: middle;
+  position: absolute;
+  right: 0;
+  left: 0;
+  /*bottom: 0;*/
+  padding: 20px 0px 0px 0px;
+  background-color: #da2327;
 }
 
 .menu a {
@@ -105,11 +120,7 @@ a {
 }
 
 .links {
-  padding: 20px 0px 0px 0px;
   display: inline-block;
-  width: 100%;
-  min-height: 55px;
-  background-color: #da2327;
 }
 
 .link {
