@@ -75,7 +75,12 @@ a {
 }
 
 .svg-logo .last-slash {
-  right: 10px;
+  transform: translate(-7px, 0px);
+  transition: all 0.3s ease;
+}
+
+.svg-logo:hover .last-slash {
+  transform: translate(0px, 0px);
 }
 
 .brand_logo img {
